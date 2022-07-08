@@ -1,9 +1,10 @@
 @import "./variaveis";
 
 html,
-body {
+body,
+main {
   font-family: $fonte;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 * {
