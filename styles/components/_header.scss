@@ -1,0 +1,29 @@
+@import "../abstract/variaveis";
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  max-width: 100%;
+  height: 128px;
+  background-color: white;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .header-logo-img {
+      width: 127.2px;
+      height: 32px;
+    }
+    .container-burguerIcon {
+      width: 32px;
+      height: 12px;
+      border-top: 2px solid #232340;
+      border-bottom: 2px solid #232340;
+    }
+  }
+}

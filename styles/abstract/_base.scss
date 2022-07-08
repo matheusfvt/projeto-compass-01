@@ -1,0 +1,11 @@
+@import "./variaveis";
+
+html,
+body {
+  font-family: $fonte;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
