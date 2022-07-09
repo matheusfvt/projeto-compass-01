@@ -6,7 +6,7 @@
   margin-bottom: 64px;
   .hero-line-container {
     .hero-line {
-      z-index: 2;
+      z-index: 1;
       position: absolute;
       right: 0;
       top: 0;
@@ -70,6 +70,7 @@
     top: 0;
     max-height: 815px;
     min-height: 815px;
+    z-index: 2;
     img {
       display: block;
       max-width: 100%;

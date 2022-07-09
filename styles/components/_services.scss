@@ -1,9 +1,9 @@
 @import "../abstract/variaveis";
 
 #services {
-  padding-top: 128px;
+  padding-top: ($padding * 2);
   height: 2419px;
-  background: linear-gradient(rgba(240, 229, 230, 0.56), #ffffff);
+  background: linear-gradient(rgba(240, 229, 230, 1), #ffffff);
   .services-top-content {
     max-width: 100%;
     padding: 0 $padding;
@@ -144,7 +144,7 @@
     flex-direction: column;
     height: 500px;
     img {
-      max-width: 100%;
+      max-width: 90%;
     }
     .services-img-imagem {
       position: absolute;
