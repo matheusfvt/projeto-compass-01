@@ -1,10 +1,9 @@
 @import "../abstract/variaveis";
 
 #work {
-  height: 3484px;
+  //   height: 3484px; //3210 for 320px
   .work-content {
     max-width: 100%;
-    height: 238px;
     padding: 0 $padding;
     .work-headline {
       height: 238px;
@@ -46,19 +45,9 @@
       margin-bottom: 32px;
 
       .work-card-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
         img {
           max-width: 100%;
-        }
-        .work-image {
-          position: absolute;
-          z-index: 2;
-          width: 75%;
-        }
-        .work-image-bg {
-          z-index: 0;
         }
       }
       .work-card-headline {
@@ -72,11 +61,11 @@
           font-size: 24px;
           font-weight: 700;
           line-height: 32px;
-          letter-spacing: -0.20000000298023224px;
           text-align: left;
         }
 
         p {
+          width: 235px;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -96,8 +85,7 @@
     }
   }
   .work-button {
-    padding: 48px $padding;
-    width: 100%;
+    margin: 48px $padding;
 
     button {
       border: 0;

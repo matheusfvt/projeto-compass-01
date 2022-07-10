@@ -111,7 +111,6 @@ header .header-container .container-burguerIcon {
 
 #who-we-are {
   background-color: #232340;
-  height: 1681px;
   padding-top: 64px;
 }
 #who-we-are .who-we-are-top-content {
@@ -201,19 +200,19 @@ header .header-container .container-burguerIcon {
   height: 248px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 #who-we-are .who-we-are-bottom-content .who-we-are-bottom-headline .who-we-are-bottom-title {
   max-width: 100%;
-  font-size: 24px;
+  font-size: 6.4vw;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 8.5333333333vw;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 #who-we-are .who-we-are-bottom-content .who-we-are-bottom-headline .who-we-are-bottom-text {
-  font-size: 16px;
+  line-height: 7.4666666667vw;
+  font-size: 4.2666666667vw;
   font-weight: 400;
-  line-height: 28px;
   letter-spacing: 0px;
   color: #8b8b8b;
 }
@@ -262,7 +261,6 @@ header .header-container .container-burguerIcon {
 
 #services {
   padding-top: 64px;
-  height: 2419px;
   background: linear-gradient(rgb(240, 229, 230), #ffffff);
 }
 #services .services-top-content {
@@ -315,7 +313,7 @@ header .header-container .container-burguerIcon {
   display: flex;
   flex-direction: column;
 }
-#services .service-cards .service-card-single:nth-child(2) {
+#services .service-cards .service-card-single:hover {
   background-color: #5468e7;
   color: #ffffff;
 }
@@ -341,7 +339,7 @@ header .header-container .container-burguerIcon {
 }
 #services .services-bottom-content {
   margin-top: 56px;
-  width: 72%;
+  width: 280px;
   padding: 0 32px;
 }
 #services .services-bottom-content .services-bottom-headline {
@@ -395,48 +393,32 @@ header .header-container .container-burguerIcon {
   color: #000000;
 }
 #services .services-img {
-  margin-top: 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 500px;
+  margin-top: 36px;
+  width: 100%;
 }
 #services .services-img img {
-  max-width: 90%;
-}
-#services .services-img .services-img-imagem {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-#services .services-img .services-img-bg {
-  bottom: 40px;
-  position: relative;
+  max-width: 100%;
 }
 #services .services-pagination {
+  margin-bottom: 50px;
   max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#services .services-pagination input {
-  border-radius: 0px;
-  color: #ffffff;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-  margin: 0;
-}
-#services .services-pagination input:nth-child(2) {
-  background: linear-gradient(#3a8fff 0%, #0837ae 100%);
+#services .services-pagination .services-input:nth-child(2) {
+  color: #0837ae;
   margin: 0 20px;
 }
-
-#work {
-  height: 3484px;
+#services .services-pagination .services-input input {
+  width: 6px;
+  height: 6px;
+  color: #0837ae;
+  margin: 0;
 }
+
 #work .work-content {
   max-width: 100%;
-  height: 238px;
   padding: 0 32px;
 }
 #work .work-content .work-headline {
@@ -479,20 +461,10 @@ header .header-container .container-burguerIcon {
   margin-bottom: 32px;
 }
 #work .work-cards .work-card-single .work-card-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 #work .work-cards .work-card-single .work-card-img img {
   max-width: 100%;
-}
-#work .work-cards .work-card-single .work-card-img .work-image {
-  position: absolute;
-  z-index: 2;
-  width: 75%;
-}
-#work .work-cards .work-card-single .work-card-img .work-image-bg {
-  z-index: 0;
 }
 #work .work-cards .work-card-single .work-card-headline {
   display: flex;
@@ -505,10 +477,10 @@ header .header-container .container-burguerIcon {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: -0.200000003px;
   text-align: left;
 }
 #work .work-cards .work-card-single .work-card-headline p {
+  width: 235px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -524,8 +496,7 @@ header .header-container .container-burguerIcon {
   margin-bottom: 0;
 }
 #work .work-button {
-  padding: 48px 32px;
-  width: 100%;
+  margin: 48px 32px;
 }
 #work .work-button button {
   border: 0;
@@ -538,4 +509,65 @@ header .header-container .container-burguerIcon {
   font-weight: 600;
   line-height: 22px;
   text-align: center;
+}
+
+#cta {
+  padding-top: 64px;
+}
+#cta .cta-container {
+  display: flex;
+  flex-direction: column;
+  height: 997px;
+}
+#cta .cta-content {
+  position: absolute;
+  margin: 64px 42px 0 72px;
+  max-width: 100%;
+  height: 91.7333333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+#cta .cta-content .cta-headline {
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+#cta .cta-content .cta-headline .cta-subtitle {
+  width: 138px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.7333333333vw;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+#cta .cta-content .cta-headline .cta-title {
+  font-size: 11.8vw;
+  font-weight: 700;
+  line-height: 13.9333333333vw;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+#cta .cta-content .cta-button {
+  width: 55%;
+}
+#cta .cta-content .cta-button button {
+  height: 46px;
+  width: 100%;
+  background: #ffffff;
+  color: #5468e7;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#cta .cta-imagem img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
