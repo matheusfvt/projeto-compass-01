@@ -75,14 +75,9 @@ header .header-container .container-burguerIcon {
   text-align: left;
   color: #606060;
 }
-#hero .hero-content .hero-button {
+#hero .hero-content button {
   height: 56px;
   max-width: 160px;
-  left: 32px;
-  top: 428px;
-  border-radius: 0px;
-}
-#hero .hero-content .hero-button button {
   border: 0;
   color: #ffffff;
   font-size: 16px;
@@ -136,12 +131,12 @@ header .header-container .container-burguerIcon {
   color: #ffffff;
 }
 #who-we-are .who-we-are-top-content .who-we-are-top-title {
-  font-size: 40px;
+  font-size: 10.6666666667vw;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 12.8vw;
   text-align: left;
   color: white;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   max-width: 100%;
 }
 #who-we-are .who-we-are-top-content .who-we-are-arrowDropdown {
@@ -154,21 +149,26 @@ header .header-container .container-burguerIcon {
   display: flex;
   justify-content: space-between;
 }
+#who-we-are .who-we-are-top-content .who-we-are-arrows svg {
+  border-radius: 50%;
+}
 #who-we-are .who-we-are-top-content .who-we-are-arrows svg:first-child {
   margin-right: 16px;
 }
-#who-we-are .who-we-are-top-content .who-we-are-dropdown {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#who-we-are .who-we-are-top-content .who-we-are-arrows svg:hover {
+  background-color: #5468e7;
 }
-#who-we-are .who-we-are-top-content .who-we-are-dropdown span {
+#who-we-are .who-we-are-top-content .who-we-are-dropdown {
+  max-width: 100px;
+  background: #232340;
+  border-radius: 8px;
+  border: 0;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 16px;
   letter-spacing: 0px;
-  color: #ffffff;
-  margin-right: 56px;
+  width: 144px;
+  color: white;
 }
 #who-we-are .who-we-are-img {
   margin-top: 56px;
@@ -217,6 +217,7 @@ header .header-container .container-burguerIcon {
   color: #ffffff;
   border-radius: 8px;
   border: 0;
+  cursor: pointer;
 }
 #who-we-are .who-we-are-number-container {
   display: flex;
@@ -250,19 +251,32 @@ header .header-container .container-burguerIcon {
 
 #services {
   padding-top: 64px;
-  background: linear-gradient(rgb(240, 229, 230), #ffffff);
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(240, 235, 229, 0.504289) 100%);
+}
+#services .services-top-line,
+#services .services-bottom-line {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+}
+#services .services-top-line {
+  margin-top: 27rem;
+}
+#services .services-bottom-line {
+  opacity: 6%;
 }
 #services .services-top-content {
   max-width: 100%;
   padding: 0 32px;
 }
-#services .services-top-content .services-top-headline .services-top-subtitle {
+#services .services-top-content .services-top-subtitle {
   width: 129px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
 }
-#services .services-top-content .services-top-headline .services-top-subtitle p {
+#services .services-top-content .services-top-subtitle p {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -276,11 +290,14 @@ header .header-container .container-burguerIcon {
   color: #232340;
   margin-bottom: 32px;
 }
-#services .services-top-content .services-arrows {
-  display: flex;
+#services .services-top-content .services-arrows svg {
+  border-radius: 50%;
 }
 #services .services-top-content .services-arrows svg:first-child {
   margin-right: 16px;
+}
+#services .services-top-content .services-arrows svg:hover {
+  background-color: #5468e7;
 }
 #services .service-cards {
   padding: 0 32px;
@@ -294,6 +311,7 @@ header .header-container .container-burguerIcon {
   color: #ffffff;
 }
 #services .service-cards .service-card-single {
+  box-shadow: 0px 20px 50px #ededed;
   height: 190px;
   display: flex;
   align-items: center;
@@ -370,8 +388,10 @@ header .header-container .container-burguerIcon {
   color: #000000;
   text-align: left;
 }
-#services .services-img {
+#services .services-bottom-image {
   margin-top: 36px;
+}
+#services .services-bottom-image .services-img {
   width: 100%;
 }
 #services .services-pagination {
@@ -435,12 +455,10 @@ header .header-container .container-burguerIcon {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
-}
-#work .work-cards .work-card-single .work-card-img {
   width: 100%;
 }
-#work .work-cards .work-card-single .work-card-img img {
-  max-width: 100%;
+#work .work-cards .work-card-single img {
+  width: 100%;
 }
 #work .work-cards .work-card-single .work-card-headline {
   display: flex;
@@ -468,6 +486,15 @@ header .header-container .container-burguerIcon {
   width: 48px;
   border-radius: 0px;
 }
+#work .work-cards .work-card-single .work-card-arrow svg {
+  border-radius: 50%;
+}
+#work .work-cards .work-card-single .work-card-arrow svg:hover {
+  background-color: #232340;
+}
+#work .work-cards .work-card-single .work-card-arrow svg:hover path {
+  stroke: white;
+}
 #work .work-cards .work-card-single:last-child {
   margin-bottom: 0;
 }
@@ -485,6 +512,7 @@ header .header-container .container-burguerIcon {
   font-weight: 600;
   line-height: 22px;
   text-align: center;
+  cursor: pointer;
 }
 
 #cta {
@@ -542,24 +570,30 @@ header .header-container .container-burguerIcon {
   line-height: 22px;
   letter-spacing: 0px;
   text-align: center;
+  cursor: pointer;
 }
 #cta .cta-container .cta-imagem img {
   width: 100%;
 }
 
-#job {
+#job .job-line {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+#job .job-container {
   padding-top: 64px;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
 }
-#job .job-content {
+#job .job-container .job-content {
   max-width: 100%;
   padding: 0 32px;
 }
-#job .job-content .job-headline {
+#job .job-container .job-content .job-headline {
   display: flex;
   flex-direction: column;
 }
-#job .job-content .job-headline .job-subtitle {
+#job .job-container .job-content .job-headline .job-subtitle {
   width: 138px;
   display: flex;
   justify-content: space-between;
@@ -569,7 +603,7 @@ header .header-container .container-burguerIcon {
   line-height: 18px;
   letter-spacing: 0px;
 }
-#job .job-content .job-headline .job-title {
+#job .job-container .job-content .job-headline .job-title {
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -577,7 +611,7 @@ header .header-container .container-burguerIcon {
   color: #232340;
   margin: 24px 0;
 }
-#job .job-content .job-headline .job-text {
+#job .job-container .job-content .job-headline .job-text {
   color: #606060;
   font-size: 16px;
   font-weight: 400;
@@ -585,12 +619,12 @@ header .header-container .container-burguerIcon {
   text-align: left;
   width: 275px;
 }
-#job .job-cards {
+#job .job-container .job-cards {
   margin: 48px 0;
   display: flex;
   flex-direction: column;
 }
-#job .job-cards .job-card-single {
+#job .job-container .job-cards .job-card-single {
   z-index: 2;
   box-shadow: 0px 20px 50px #ededed;
   height: 175px;
@@ -602,43 +636,43 @@ header .header-container .container-burguerIcon {
   align-items: center;
   margin: 0 32px 16px;
 }
-#job .job-cards .job-card-single:last-child {
+#job .job-container .job-cards .job-card-single:last-child {
   margin-bottom: 0;
 }
-#job .job-cards .job-card-single:hover {
+#job .job-container .job-cards .job-card-single:hover {
   margin-right: 0;
   background-color: #232340;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   box-shadow: none;
 }
-#job .job-cards .job-card-single:hover .job-card-box h1 {
+#job .job-container .job-cards .job-card-single:hover .job-card-box h1 {
   color: white;
   font-size: 5.8666666667vw;
 }
-#job .job-cards .job-card-single:hover .job-card-box p {
+#job .job-container .job-cards .job-card-single:hover .job-card-box p {
   font-size: 3.4666666667vw;
 }
-#job .job-cards .job-card-single:hover .job-card-box svg path {
+#job .job-container .job-cards .job-card-single:hover .job-card-box svg path {
   stroke: white;
 }
-#job .job-cards .job-card-single:hover .job-card-box .job-card-box-title .job-notification {
+#job .job-container .job-cards .job-card-single:hover .job-card-box .job-card-box-title .job-notification {
   display: none;
 }
-#job .job-cards .job-card-single:hover img {
+#job .job-container .job-cards .job-card-single:hover img {
   display: unset;
 }
-#job .job-cards .job-card-single .job-card-box {
+#job .job-container .job-cards .job-card-single .job-card-box {
   display: flex;
   flex-direction: column;
   height: 85px;
   margin-left: 10.6666666667vw;
 }
-#job .job-cards .job-card-single .job-card-box .job-card-box-title {
+#job .job-container .job-cards .job-card-single .job-card-box .job-card-box-title {
   display: flex;
   align-items: center;
 }
-#job .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification {
+#job .job-container .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification {
   height: 6.4vw;
   width: 6.4vw;
   border-radius: 50%;
@@ -648,21 +682,21 @@ header .header-container .container-burguerIcon {
   align-items: center;
   margin-left: 4vw;
 }
-#job .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification span {
+#job .job-container .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification span {
   color: white;
   font-size: 3.7333333333vw;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: center;
 }
-#job .job-cards .job-card-single .job-card-box h1 {
+#job .job-container .job-cards .job-card-single .job-card-box h1 {
   font-size: 6.4vw;
   font-weight: 700;
   line-height: 32px;
   text-align: left;
   color: #232340;
 }
-#job .job-cards .job-card-single .job-card-box p {
+#job .job-container .job-cards .job-card-single .job-card-box p {
   font-size: 4.2666666667vw;
   font-weight: 400;
   line-height: 28px;
@@ -671,7 +705,7 @@ header .header-container .container-burguerIcon {
   color: #606060;
   margin: 4px 0 10px;
 }
-#job .job-cards .job-card-single img {
+#job .job-container .job-cards .job-card-single img {
   display: none;
   position: absolute;
   right: 0;
@@ -756,6 +790,15 @@ header .header-container .container-burguerIcon {
 #footer .footer-bottom-content > * {
   margin-bottom: 32px;
 }
+#footer .footer-bottom-content .footer-bottom-line {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
 #footer .footer-bottom-content .footer-bottom-logo {
   height: 35px;
   width: 136px;
@@ -768,8 +811,17 @@ header .header-container .container-burguerIcon {
   color: #adadad;
   max-width: 311px;
 }
-#footer .footer-bottom-content .footer-bottom-dropdown {
+#footer .footer-bottom-content #home-dropdown {
+  height: 48px;
   width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #606060;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
 }
 #footer .footer-bottom-content .footer-bottom-copyright {
   color: #adadad;

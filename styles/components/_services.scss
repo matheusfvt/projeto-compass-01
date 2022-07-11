@@ -2,25 +2,45 @@
 
 #services {
   padding-top: ($padding * 2);
-  background: linear-gradient(rgba(240, 229, 230, 1), #ffffff);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.0001) 0%,
+    rgba(240, 235, 229, 0.504289) 100%
+  );
+  .services-top-line,
+  .services-bottom-line {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+  }
+
+  .services-top-line {
+    margin-top: 27rem;
+  }
+
+  .services-bottom-line {
+    opacity: 6%;
+  }
+
   .services-top-content {
     max-width: 100%;
     padding: 0 $padding;
-    .services-top-headline {
-      .services-top-subtitle {
-        width: 129px;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 24px;
-        p {
-          // font-family: 'SF Pro Text', sans-serif;
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 18px;
-          color: #5468e7;
-        }
+
+    .services-top-subtitle {
+      width: 129px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      p {
+        // font-family: 'SF Pro Text', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #5468e7;
       }
     }
+
     .services-top-title {
       font-size: calc(40px / calc(375px / 100vw));
       font-weight: 700;
@@ -30,10 +50,16 @@
       margin-bottom: $padding;
     }
     .services-arrows {
-      display: flex;
-    }
-    .services-arrows svg:first-child {
-      margin-right: 16px;
+      // width: 112px;
+      svg {
+        border-radius: 50%;
+        &:first-child {
+          margin-right: 16px;
+        }
+        &:hover {
+          background-color: #5468e7;
+        }
+      }
     }
   }
   .service-cards {
@@ -47,6 +73,7 @@
       color: #ffffff;
     }
     .service-card-single {
+      box-shadow: 0px 20px 50px #ededed;
       height: 190px;
       display: flex;
       align-items: center;
@@ -125,10 +152,11 @@
       }
     }
   }
-
-  .services-img {
+  .services-bottom-image {
     margin-top: 36px;
-    width: 100%;
+    .services-img {
+      width: 100%;
+    }
   }
 
   .services-pagination {
