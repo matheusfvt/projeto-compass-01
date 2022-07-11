@@ -49,6 +49,7 @@
         font-weight: 700;
         line-height: calc(40px / calc(375px / 100vw));
         letter-spacing: -0.5px;
+        max-width: 263px;
       }
       button {
         margin-top: 40px;
@@ -84,6 +85,7 @@
       line-height: 28px;
       letter-spacing: 0px;
       color: #adadad;
+      max-width: 311px;
     }
     .footer-bottom-dropdown {
       width: 100%;

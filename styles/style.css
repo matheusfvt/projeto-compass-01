@@ -51,13 +51,12 @@ header .header-container .container-burguerIcon {
 #hero .hero-content {
   padding: 0 32px;
   max-width: 100%;
-  height: 356px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+#hero .hero-content .hero-content-title {
+  margin-bottom: 24px;
 }
 #hero .hero-content .hero-content-title h1 {
-  font-size: 48px;
+  font-size: 12.8vw;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -0.5px;
@@ -65,10 +64,11 @@ header .header-container .container-burguerIcon {
   color: #232340;
 }
 #hero .hero-content .hero-content-text {
+  margin-bottom: 24px;
   width: 100%;
 }
 #hero .hero-content .hero-content-text p {
-  font-size: 16px;
+  font-size: 4.2666666667vw;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0px;
@@ -100,14 +100,8 @@ header .header-container .container-burguerIcon {
   display: flex;
   position: absolute;
   top: 0;
-  max-height: 815px;
-  min-height: 815px;
+  right: 0;
   z-index: 2;
-}
-#hero .hero-img img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 #who-we-are {
@@ -145,10 +139,10 @@ header .header-container .container-burguerIcon {
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: -0.400000006px;
   text-align: left;
   color: white;
   padding-bottom: 32px;
+  max-width: 100%;
 }
 #who-we-are .who-we-are-top-content .who-we-are-arrowDropdown {
   display: flex;
@@ -178,29 +172,23 @@ header .header-container .container-burguerIcon {
 }
 #who-we-are .who-we-are-img {
   margin-top: 56px;
-  height: 424px;
-  display: flex;
   padding: 0;
   z-index: 1;
   width: 100%;
 }
 #who-we-are .who-we-are-img img {
-  max-width: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #who-we-are .who-we-are-bottom-content {
   margin-top: 56px;
-  height: 336px;
   max-width: 100%;
   padding: 0 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 #who-we-are .who-we-are-bottom-content .who-we-are-bottom-headline {
   max-width: 100%;
-  height: 248px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 40px;
 }
 #who-we-are .who-we-are-bottom-content .who-we-are-bottom-headline .who-we-are-bottom-title {
   max-width: 100%;
@@ -268,11 +256,6 @@ header .header-container .container-burguerIcon {
   max-width: 100%;
   padding: 0 32px;
 }
-#services .services-top-content .services-top-headline {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 #services .services-top-content .services-top-headline .services-top-subtitle {
   width: 129px;
   display: flex;
@@ -286,23 +269,15 @@ header .header-container .container-burguerIcon {
   color: #5468e7;
 }
 #services .services-top-content .services-top-title {
-  font-size: 40px;
+  font-size: 10.6666666667vw;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 12.8vw;
   text-align: left;
   color: #232340;
-  padding-bottom: 32px;
-}
-#services .services-top-content .services-arrowContainer {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  width: 108px;
+  margin-bottom: 32px;
 }
 #services .services-top-content .services-arrows {
   display: flex;
-  justify-content: space-between;
 }
 #services .services-top-content .services-arrows svg:first-child {
   margin-right: 16px;
@@ -344,20 +319,17 @@ header .header-container .container-burguerIcon {
 }
 #services .services-bottom-content {
   margin-top: 56px;
-  width: 280px;
   padding: 0 32px;
+  width: 75%;
 }
 #services .services-bottom-content .services-bottom-headline {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   color: #232340;
 }
 #services .services-bottom-content .services-bottom-headline .services-bottom-subtitle {
   width: 129px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 #services .services-bottom-content .services-bottom-headline .services-bottom-subtitle p {
   font-size: 14px;
@@ -371,38 +343,36 @@ header .header-container .container-burguerIcon {
   text-align: left;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 6.4vw;
+  line-height: 8.5333333333vw;
   letter-spacing: -0.2px;
   color: #232340;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 #services .services-bottom-content .services-bottom-number {
-  height: 191px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#services .services-bottom-content .services-bottom-number h2 {
-  font-size: 140px;
+#services .services-bottom-content .services-bottom-number h1 {
+  font-size: 37.3333333333vw;
   font-weight: 600;
-  line-height: 167px;
+  line-height: 44.5333333333vw;
   letter-spacing: 0px;
   color: #5468e7;
+  text-align: left;
 }
-#services .services-bottom-content .services-bottom-number span {
-  font-size: 18px;
+#services .services-bottom-content .services-bottom-number p {
+  font-size: 4.8vw;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0px;
   color: #000000;
+  text-align: left;
 }
 #services .services-img {
   margin-top: 36px;
   width: 100%;
-}
-#services .services-img img {
-  max-width: 100%;
 }
 #services .services-pagination {
   margin-bottom: 50px;
@@ -411,15 +381,15 @@ header .header-container .container-burguerIcon {
   align-items: center;
   justify-content: center;
 }
-#services .services-pagination .services-input:nth-child(2) {
-  color: #0837ae;
+#services .services-pagination input:nth-child(2) {
   margin: 0 20px;
 }
-#services .services-pagination .services-input input {
+#services .services-pagination input {
   width: 6px;
   height: 6px;
-  color: #0837ae;
+  color: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
   margin: 0;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.3019607843);
 }
 
 #work {
@@ -429,12 +399,7 @@ header .header-container .container-burguerIcon {
   max-width: 100%;
   padding: 0 32px;
 }
-#work .work-content .work-headline {
-  height: 238px;
-  display: flex;
-  flex-direction: column;
-}
-#work .work-content .work-headline .work-subtitle {
+#work .work-content .work-subtitle {
   width: 161px;
   display: flex;
   justify-content: space-between;
@@ -444,24 +409,27 @@ header .header-container .container-burguerIcon {
   line-height: 18px;
   letter-spacing: 0px;
 }
-#work .work-content .work-headline .work-title {
-  font-size: 40px;
+#work .work-content .work-title {
+  font-size: 10.6666666667vw;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 12.8vw;
   text-align: left;
   color: #232340;
-  padding: 10% 0;
+  margin: 24px 0 16px;
 }
-#work .work-content .work-headline .work-text {
+#work .work-content .work-text {
   color: #606060;
-  font-size: 16px;
+  font-size: 4.2666666667vw;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 7.4666666667vw;
   text-align: left;
 }
 #work .work-cards {
   margin-top: 56px;
   padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #work .work-cards .work-card-single {
   display: flex;
@@ -624,7 +592,7 @@ header .header-container .container-burguerIcon {
 }
 #job .job-cards .job-card-single {
   z-index: 2;
-  box-shadow: 20px 20px 50px #ededed;
+  box-shadow: 0px 20px 50px #ededed;
   height: 175px;
   display: flex;
   background: white;
@@ -708,6 +676,7 @@ header .header-container .container-burguerIcon {
   position: absolute;
   right: 0;
   width: 28.8vw;
+  max-width: 108px;
 }
 
 #footer {
@@ -762,6 +731,7 @@ header .header-container .container-burguerIcon {
   font-weight: 700;
   line-height: 10.6666666667vw;
   letter-spacing: -0.5px;
+  max-width: 263px;
 }
 #footer .footer-top-content .footer-bottom-headline button {
   margin-top: 40px;
@@ -796,6 +766,7 @@ header .header-container .container-burguerIcon {
   line-height: 28px;
   letter-spacing: 0px;
   color: #adadad;
+  max-width: 311px;
 }
 #footer .footer-bottom-content .footer-bottom-dropdown {
   width: 100%;

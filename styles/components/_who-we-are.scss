@@ -34,10 +34,10 @@
       font-size: 40px;
       font-weight: 700;
       line-height: 48px;
-      letter-spacing: -0.4000000059604645px;
       text-align: left;
       color: white;
       padding-bottom: $padding;
+      max-width: 100%;
     }
     .who-we-are-arrowDropdown {
       display: flex;
@@ -69,29 +69,22 @@
   }
   .who-we-are-img {
     margin-top: 56px;
-    height: 424px;
-    display: flex;
     padding: 0;
     z-index: 1;
     width: 100%;
     img {
-      max-width: 100%;
+      width: 100%;
+      object-fit: contain;
     }
   }
   .who-we-are-bottom-content {
     margin-top: 56px;
-    height: 336px;
     max-width: 100%;
     padding: 0 $padding;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     .who-we-are-bottom-headline {
       max-width: 100%;
-      height: 248px;
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 40px;
       .who-we-are-bottom-title {
         max-width: 100%;
         font-size: calc(24px / calc(375px / 100vw));

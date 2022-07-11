@@ -17,13 +17,10 @@
   .hero-content {
     padding: 0 $padding;
     max-width: 100%;
-    height: 356px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     .hero-content-title {
+      margin-bottom: 24px;
       h1 {
-        font-size: 48px;
+        font-size: calc(48px / calc(375px / 100vw));
         font-weight: 700;
         line-height: 56px;
         letter-spacing: -0.5px;
@@ -32,9 +29,10 @@
       }
     }
     .hero-content-text {
+      margin-bottom: 24px;
       width: 100%;
       p {
-        font-size: 16px;
+        font-size: calc(16px / calc(375px / 100vw));
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0px;
@@ -69,18 +67,12 @@
     display: flex;
     position: absolute;
     top: 0;
-    max-height: 815px;
-    min-height: 815px;
+    right: 0;
     z-index: 2;
-    img {
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
-    }
   }
 }
 
-// @media (min-width: 320px) and (max-width: 375px) {
+// @media (min-width: 425px) and (max-width: 1024px) {
 //   #hero {
 //   }
 // }

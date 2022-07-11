@@ -49,7 +49,7 @@
 
     .job-card-single {
       z-index: 2;
-      box-shadow: 20px 20px 50px #ededed;
+      box-shadow: 0px 20px 50px #ededed;
       height: 175px;
       display: flex;
       background: white;
@@ -140,6 +140,7 @@
         position: absolute;
         right: 0;
         width: calc(108px / calc(375px / 100vw));
+        max-width: 108px;
       }
     }
   }
