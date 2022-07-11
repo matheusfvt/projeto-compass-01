@@ -68,12 +68,16 @@
       .service-card-box {
         display: flex;
         align-items: center;
-        margin-left: 48px;
+        margin-left: calc(48px / calc(375px / 100vw));
+        img {
+          width: calc(92px / calc(375px / 100vw));
+        }
         span {
-          margin-left: 25px;
-          font-size: 18px;
+          margin-left: calc(25px / calc(375px / 100vw));
+          font-size: calc(18px / calc(375px / 100vw));
           font-weight: 600;
           line-height: 24px;
+          letter-spacing: 0;
         }
       }
     }

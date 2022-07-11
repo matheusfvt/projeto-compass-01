@@ -94,6 +94,7 @@ header .header-container .container-burguerIcon {
   width: 100%;
   border-radius: 8px;
   background: #5468e7;
+  cursor: pointer;
 }
 #hero .hero-img {
   display: flex;
@@ -329,13 +330,17 @@ header .header-container .container-burguerIcon {
 #services .service-cards .service-card-single .service-card-box {
   display: flex;
   align-items: center;
-  margin-left: 48px;
+  margin-left: 12.8vw;
+}
+#services .service-cards .service-card-single .service-card-box img {
+  width: 24.5333333333vw;
 }
 #services .service-cards .service-card-single .service-card-box span {
-  margin-left: 25px;
-  font-size: 18px;
+  margin-left: 6.6666666667vw;
+  font-size: 4.8vw;
   font-weight: 600;
   line-height: 24px;
+  letter-spacing: 0;
 }
 #services .services-bottom-content {
   margin-top: 56px;
@@ -417,6 +422,9 @@ header .header-container .container-burguerIcon {
   margin: 0;
 }
 
+#work {
+  padding-top: 64px;
+}
 #work .work-content {
   max-width: 100%;
   padding: 0 32px;
@@ -471,7 +479,7 @@ header .header-container .container-burguerIcon {
   flex-direction: column;
   justify-content: space-between;
   height: 132px;
-  margin: 10% 0;
+  margin: 7% 0;
 }
 #work .work-cards .work-card-single .work-card-headline h1 {
   font-size: 24px;
@@ -517,9 +525,8 @@ header .header-container .container-burguerIcon {
 #cta .cta-container {
   display: flex;
   flex-direction: column;
-  height: 997px;
 }
-#cta .cta-content {
+#cta .cta-container .cta-content {
   position: absolute;
   margin: 64px 42px 0 72px;
   max-width: 100%;
@@ -529,13 +536,13 @@ header .header-container .container-burguerIcon {
   justify-content: space-between;
   z-index: 2;
 }
-#cta .cta-content .cta-headline {
+#cta .cta-container .cta-content .cta-headline {
   height: 266px;
   display: flex;
   flex-direction: column;
   color: #ffffff;
 }
-#cta .cta-content .cta-headline .cta-subtitle {
+#cta .cta-container .cta-content .cta-headline .cta-subtitle {
   width: 138px;
   display: flex;
   justify-content: space-between;
@@ -545,17 +552,17 @@ header .header-container .container-burguerIcon {
   text-align: left;
   margin-bottom: 24px;
 }
-#cta .cta-content .cta-headline .cta-title {
+#cta .cta-container .cta-content .cta-headline .cta-title {
   font-size: 11.8vw;
   font-weight: 700;
   line-height: 13.9333333333vw;
   letter-spacing: -0.5px;
   text-align: left;
 }
-#cta .cta-content .cta-button {
+#cta .cta-container .cta-content .cta-button {
   width: 55%;
 }
-#cta .cta-content .cta-button button {
+#cta .cta-container .cta-content .cta-button button {
   height: 46px;
   width: 100%;
   background: #ffffff;
@@ -568,6 +575,235 @@ header .header-container .container-burguerIcon {
   letter-spacing: 0px;
   text-align: center;
 }
-#cta .cta-imagem img {
+#cta .cta-container .cta-imagem img {
   width: 100%;
+}
+
+#job {
+  padding-top: 64px;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+}
+#job .job-content {
+  max-width: 100%;
+  padding: 0 32px;
+}
+#job .job-content .job-headline {
+  display: flex;
+  flex-direction: column;
+}
+#job .job-content .job-headline .job-subtitle {
+  width: 138px;
+  display: flex;
+  justify-content: space-between;
+  color: #5468e7;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+#job .job-content .job-headline .job-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: #232340;
+  margin: 24px 0;
+}
+#job .job-content .job-headline .job-text {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  width: 275px;
+}
+#job .job-cards {
+  margin: 48px 0;
+  display: flex;
+  flex-direction: column;
+}
+#job .job-cards .job-card-single {
+  z-index: 2;
+  box-shadow: 20px 20px 50px #ededed;
+  height: 175px;
+  display: flex;
+  background: white;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0 32px 16px;
+}
+#job .job-cards .job-card-single:last-child {
+  margin-bottom: 0;
+}
+#job .job-cards .job-card-single:hover {
+  margin-right: 0;
+  background-color: #232340;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+}
+#job .job-cards .job-card-single:hover .job-card-box h1 {
+  color: white;
+  font-size: 5.8666666667vw;
+}
+#job .job-cards .job-card-single:hover .job-card-box p {
+  font-size: 3.4666666667vw;
+}
+#job .job-cards .job-card-single:hover .job-card-box svg path {
+  stroke: white;
+}
+#job .job-cards .job-card-single:hover .job-card-box .job-card-box-title .job-notification {
+  display: none;
+}
+#job .job-cards .job-card-single:hover img {
+  display: unset;
+}
+#job .job-cards .job-card-single .job-card-box {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  margin-left: 10.6666666667vw;
+}
+#job .job-cards .job-card-single .job-card-box .job-card-box-title {
+  display: flex;
+  align-items: center;
+}
+#job .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification {
+  height: 6.4vw;
+  width: 6.4vw;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4vw;
+}
+#job .job-cards .job-card-single .job-card-box .job-card-box-title .job-notification span {
+  color: white;
+  font-size: 3.7333333333vw;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#job .job-cards .job-card-single .job-card-box h1 {
+  font-size: 6.4vw;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #232340;
+}
+#job .job-cards .job-card-single .job-card-box p {
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #606060;
+  margin: 4px 0 10px;
+}
+#job .job-cards .job-card-single img {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 28.8vw;
+}
+
+#footer {
+  padding-top: 64px;
+}
+#footer .footer-top-content {
+  padding: 0 24px;
+  margin: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 548px;
+  max-width: 100%;
+  text-align: center;
+  background: url(../images/footer/bg-footer.png) no-repeat center;
+  background-size: cover;
+  border-radius: 30px;
+}
+#footer .footer-top-content .footer-top-headline {
+  margin: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 62.9333333333vw;
+}
+#footer .footer-top-content .footer-top-headline img {
+  margin-left: 13.3333333333vw;
+}
+#footer .footer-top-content .footer-top-headline p {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#footer .footer-top-content .footer-top-headline p span:first-child {
+  margin-right: 13px;
+}
+#footer .footer-top-content .footer-top-headline h2 {
+  margin-top: 40px;
+  font-size: 4.8vw;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+#footer .footer-top-content .footer-bottom-headline {
+  margin-top: 40px;
+}
+#footer .footer-top-content .footer-bottom-headline h1 {
+  font-size: 7.5333333333vw;
+  font-weight: 700;
+  line-height: 10.6666666667vw;
+  letter-spacing: -0.5px;
+}
+#footer .footer-top-content .footer-bottom-headline button {
+  margin-top: 40px;
+  height: 56px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  color: #5468e7;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+#footer .footer-bottom-content {
+  margin: 80px 32px 32px;
+  max-width: 100%;
+  text-align: center;
+}
+#footer .footer-bottom-content > * {
+  margin-bottom: 32px;
+}
+#footer .footer-bottom-content .footer-bottom-logo {
+  height: 35px;
+  width: 136px;
+}
+#footer .footer-bottom-content .footer-bottom-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #adadad;
+}
+#footer .footer-bottom-content .footer-bottom-dropdown {
+  width: 100%;
+}
+#footer .footer-bottom-content .footer-bottom-copyright {
+  color: #adadad;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
 }/*# sourceMappingURL=style.css.map */

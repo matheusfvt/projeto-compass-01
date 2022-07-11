@@ -1,6 +1,7 @@
 @import "../abstract/variaveis";
 
 #work {
+  padding-top: $padding * 2;
   //   height: 3484px; //3210 for 320px
   .work-content {
     max-width: 100%;
@@ -55,7 +56,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 132px;
-        margin: 10% 0;
+        margin: 7% 0;
 
         h1 {
           font-size: 24px;

@@ -5,61 +5,60 @@
   .cta-container {
     display: flex;
     flex-direction: column;
-    height: 997px;
-  }
-  .cta-content {
-    position: absolute;
-    margin: 64px 42px 0 72px;
-    max-width: 100%;
-    height: calc(344px / calc(375px / 100vw));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
-    .cta-headline {
-      height: 266px;
+    .cta-content {
+      position: absolute;
+      margin: 64px 42px 0 72px;
+      max-width: 100%;
+      height: calc(344px / calc(375px / 100vw));
       display: flex;
       flex-direction: column;
-      color: #ffffff;
-
-      .cta-subtitle {
-        width: 138px;
+      justify-content: space-between;
+      z-index: 2;
+      .cta-headline {
+        height: 266px;
         display: flex;
-        justify-content: space-between;
-        font-size: calc(14px / calc(375px / 100vw));
-        font-weight: 600;
-        line-height: 18px;
-        text-align: left;
-        margin-bottom: 24px;
+        flex-direction: column;
+        color: #ffffff;
+
+        .cta-subtitle {
+          width: 138px;
+          display: flex;
+          justify-content: space-between;
+          font-size: calc(14px / calc(375px / 100vw));
+          font-weight: 600;
+          line-height: 18px;
+          text-align: left;
+          margin-bottom: 24px;
+        }
+        .cta-title {
+          font-size: calc(48px / calc(375px / 100vw) - 1vw);
+          font-weight: 700;
+          line-height: calc(56px / calc(375px / 100vw) - 1vw);
+          letter-spacing: -0.5px;
+          text-align: left;
+        }
       }
-      .cta-title {
-        font-size: calc(48px / calc(375px / 100vw) - 1vw);
-        font-weight: 700;
-        line-height: calc(56px / calc(375px / 100vw) - 1vw);
-        letter-spacing: -0.5px;
-        text-align: left;
+      .cta-button {
+        width: 55%;
+        button {
+          height: 46px;
+          width: 100%;
+          background: #ffffff;
+          color: #5468e7;
+          border: 0;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
       }
     }
-    .cta-button {
-      width: 55%;
-      button {
-        height: 46px;
+    .cta-imagem {
+      img {
         width: 100%;
-        background: #ffffff;
-        color: #5468e7;
-        border: 0;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0px;
-        text-align: center;
       }
-    }
-  }
-  .cta-imagem {
-    img {
-      width: 100%;
     }
   }
 }
